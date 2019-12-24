@@ -1,0 +1,98 @@
+/* paging 
+-------------------------------------------------------------------------*/
+	div.paging {
+		background:url(paging/bg.gif) repeat-x;
+		height:28px;
+		border:1px solid #99BBE8;
+		width:100%;
+		clear:both;
+	}
+	div.paging ul {
+		float:left;
+		list-style:none;
+		margin:0;
+		padding:0;
+	}
+	div.paging li {
+		float:left;
+		color:#999;
+		margin:0 5px 0 0;
+		padding:2px 0;
+		display:inline;
+		line-height:15px;
+	}
+
+	div.paging li.split {
+		background:url(paging/split.gif) no-repeat;
+		width:2px;
+		height:13px;
+		text-indent:-5000;
+		margin-top:7px;
+	}
+
+	div.paging li.refresh {
+		background:url(paging/refresh.gif) no-repeat;
+		width:16px;
+		height:16px;
+		text-indent:-5000;
+		margin-top:4px;
+	}
+
+	div.paging li.first {
+		background:url(paging/page-first.gif) no-repeat;
+		width:16px;
+		height:16px;
+		text-indent:-5000;
+		margin-top:4px;
+	}
+
+	div.paging li.last {
+		background:url(paging/page-last.gif) no-repeat;
+		width:16px;
+		height:16px;
+		text-indent:-5000;
+		margin-top:4px;
+	}
+
+	div.paging li.prev {
+		background:url(paging/page-prev-disabled.gif) no-repeat;
+		width:16px;
+		height:16px;
+		text-indent:-5000;
+		margin-top:4px;
+	}
+	div.paging li.prev-active {
+		background:url(paging/page-prev.gif) no-repeat;
+		width:16px;
+		height:16px;
+		text-indent:-5000;
+		margin-top:4px;
+	}
+
+	div.paging li.next {
+		background:url(paging/page-next-disabled.gif) no-repeat;
+		width:16px;
+		height:16px;
+		text-indent:-5000;
+		margin-top:4px;
+	}
+	div.paging li.next-active {
+		background:url(paging/page-next.gif) no-repeat;
+		width:16px;
+		height:16px;
+		text-indent:-5000;
+		margin-top:4px;
+	}
+
+	div.paging a {
+		display:block;
+		line-height:15px;
+		padding:0 3px;
+	}
+	div.paging li.page_list input {
+		font:8pt tahoma;
+	}
+	div.paging li.page_list	{
+		color:#000;
+		font:8pt tahoma;
+	}

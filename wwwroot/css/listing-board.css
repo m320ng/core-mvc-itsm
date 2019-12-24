@@ -1,0 +1,283 @@
+/* container
+----------------------------------------------------------------------*/
+	div.listing-container {
+		background:#f8f8f8;
+	}
+	div.listing-container form {
+		display:inline;
+	}
+
+/* title
+----------------------------------------------------------------------*/
+	div.listing-title {
+		padding:7px;
+		text-align:left;
+	}
+	div.listing-title span.title {
+		font:bold 13px NanumGothic;
+		color:#8B4215;
+	}
+	div.listing-title span.search .count {
+	    color:#f00;
+	}
+
+	div.listing-loading {
+		padding:10px;
+		display:none;
+		z-index:2;
+		color:#ABABAB;
+		font:8pt tahoma;
+	}
+
+/* list
+----------------------------------------------------------------------*/
+	div.listing-list-content {
+		background:#f8f8f8 url(listing/list-header.gif) repeat-x;
+		overflow:hidden;
+		position:relative;
+		_width:100%;
+	}
+	div.listing-list-content table {
+		table-layout:fixed;
+		border-collapse:collapse;
+		background:#fff;
+	}
+	div.listing-list-content table th,
+	div.listing-list-content table td {
+		text-align:left;
+		overflow:hidden;
+		font:9pt 굴림;
+	}
+	div.listing-list-content table thead {
+		border:0; 
+		background:#e9e9e9;
+	}
+	div.listing-list-content table tr {
+		height:auto;
+	}
+	div.listing-list-content table th 
+	{
+	    background:url(listing/line_th01.gif) #e9e9e9 no-repeat right 50%;
+		border:0; 
+		/*border-top:2px solid #ff0000;*/
+		border-top:3px #3d579f solid;
+		text-align:center;
+		height:35px;
+		margin:0;
+		padding:3px;
+		color:#444;
+	}
+	div.listing-list-content table th:last-child
+	{
+	    background-image:none;
+	}
+	div.listing-list-content table th.last
+	{
+	    background-image:none;
+	}
+	div.listing-list-content table th a.asc {
+		padding:0 12px 0 0;
+		background:transparent url(listing/sort-asc.gif) no-repeat right 2px;
+		color:#444;
+	}
+	div.listing-list-content table th a.desc {
+		padding:0 12px 0 0;
+		background:transparent url(listing/sort-desc.gif) no-repeat right 2px;
+	}
+	div.listing-list-content table th a {
+		color:#444;
+	}
+	div.listing-list-content table td {
+		text-align:center;
+		border:0; border-bottom:1px solid #eee;
+		padding:2px;
+		height:30px;
+	}
+	div.listing-list-content table td.number {
+		font-family:tahoma;
+		font-size:8pt;
+		text-align:right;
+	}
+	div.listing-list-content table td.text {
+		font-family:돋움;
+		text-align:left;
+	}
+	div.listing-list-content table td.data {
+		text-align:center;
+	}
+	div.listing-list-content table td.tel {
+		font-family:tahoma;
+		font-size:8pt;
+		text-align:left;
+	}
+	div.listing-list-content table td.email {
+		font-family:tahoma;
+		font-size:8pt;
+		text-align:left;
+	}
+	div.listing-list-content table td.date {
+		font-family:tahoma;
+		font-size:8pt;
+		text-align:center;
+	}
+
+	div.listing-list-content table td.manage {
+		text-align:center;
+		margin:0;
+	}
+	div.listing-list-content table td.manage button {
+		background:#69e;
+		border:1px solid #369;
+		color:#fff;
+		padding:0;padding-top:1px;
+		margin:0;margin-right:1px;margin-bottom:1px;
+		text-align:center;
+		font:8pt 돋움;
+	}
+	div.listing-list-content table td.manage button.edit {
+		border:1px solid #188;
+		background:#4ba;
+	}
+	div.listing-list-content table td.manage button.del {
+		border:1px solid #b55;
+		background:#e78;
+	}
+	div.listing-list-content table td.manage button.disabled {
+		background:#aaa;
+	}
+	div.listing-list-content table td.no_data {
+		height:50px;
+	}
+
+	div.listing-list-content tbody tr.odd {
+		background:#fafafa;
+	}
+	div.listing-list-content tbody tr.highlight {
+		background:#eef4ff;
+	}
+	div.listing-list-content tbody tr.selected {
+		background:#ddf4dd;
+	}
+	div.listing-list-content table th.hidden,
+	div.listing-list-content table td.hidden 
+	{
+	    background:red;
+	    display:none;
+	}
+
+/* end list */
+
+/* paging 
+-------------------------------------------------------------------------*/
+	.listing-paging {
+		height:50px;
+		overflow:hidden;
+		padding-top:5px;
+	}
+	.listing-paging div {
+		position:relative;
+		float:left;
+		left: 50%;
+	}
+	.listing-paging ul {
+		list-style:none;
+		padding:10px;
+
+		position:relative;
+		float:left;
+		right:50%;
+	}
+	div.listing-paging li {
+		list-style:none;
+		float:left;
+		font:10pt tahoma;
+	}
+	div.listing-paging a {
+		display:block;
+		font:8pt 돋움;
+	}
+
+	div.listing-paging li.prev_list a,
+	div.listing-paging li.next_list a {
+		padding-top:3px;
+		font:10pt tahoma;
+	}
+
+	div.listing-paging li.page a {
+		float:left;
+		padding:1px 3px 3px 3px;
+		font:11pt tahoma;
+		color:#999;
+		margin:0 3px;
+	}
+	div.listing-paging li.current a {
+		font:bold 11pt tahoma;
+		color:#e60;
+	}
+
+	div.listing-paging li.first a {
+		background:url(paging/paging_firston.jpg) no-repeat;
+		width:22px; height:21px;
+		display:block;
+		text-indent:-2000;
+        font-size:0;
+        line-height:0;
+	}
+	div.listing-paging li.prev a {
+		background:url(paging/paging_previous.jpg) no-repeat;
+		width:21px; height:21px;
+		display:block;
+		text-indent:-2000px;
+        font-size:0;
+        line-height:0;
+		margin-right:10px;
+	}
+	div.listing-paging li.next a {
+		background:url(paging/paging_naxt.jpg) no-repeat;
+		width:22px; height:21px;
+		display:block;
+		text-indent:-2000px;
+        font-size:0;
+        line-height:0;
+		margin-left:10px;
+	}
+	div.listing-paging li.prev a.active {
+		background:url(paging/paging_previouson.jpg) no-repeat;
+		width:21px; height:21px;
+		display:block;
+		text-indent:-2000px;
+	}
+	div.listing-paging li.next a.active {
+		background:url(paging/paging_naxton.jpg) no-repeat;
+		width:22px; height:21px;
+		display:block;
+		text-indent:-2000px;
+	}
+	div.listing-paging li.last a {
+		background:url(paging/paging_endon.jpg) no-repeat;
+		width:22px; height:21px;
+		display:block;
+		text-indent:-2000px;
+        font-size:0;
+        line-height:0;
+	}
+    div.listing-paging li.split { display:none; }
+
+/* For Print */
+@media print 
+{
+	div.listing-list-content {
+	}
+	div.listing-list-content table {
+		background:#fff;
+		width:100%;
+	}
+	div.listing-list-content table th,
+	div.listing-list-content table td 
+	{
+	    background:#fff;
+	    border:1px solid #000;
+		font:9pt 굴림;
+		width:auto;
+	}
+}

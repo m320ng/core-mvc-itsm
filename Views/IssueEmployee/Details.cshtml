@@ -1,0 +1,78 @@
+﻿@model IssueEmployee
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script type="text/javascript" src="/lib/lightbox/jquery.lightbox-0.5.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/lib/uploadifive/jquery.uploadifive.js" charset="utf-8"></script>
+}
+
+<form asp-action="Details" name="create_form" class="edit form">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <legend style="border:1px solid #c8c8c8; display:inline-block; padding:8px; width:auto; border-bottom:0;"><span class="glyphicon glyphicon-pushpin"></span> 계정정보</legend>
+    @if (Model!=null) {
+        <input type="hidden" asp-for="Id" />
+    }
+    <input type="hidden" asp-for="ManageType" />
+    <table class="table table-bordered" style="width:950px;">
+        <tr>
+            <th width="120"><label asp-for="Account"></label></th>
+            <td>@Html.DisplayFor(x=>x.Account)</td>
+            <th width="120"><label asp-for="IsDeveloper"></label></th>
+            <td>@Html.DisplayFor(x=>x.IsDeveloper)</td>
+        </tr>
+        <tr>
+            <th><label asp-for="Password"></label></th>
+            <td><input asp-for="Password"/> <span asp-validation-for="Password"></span></td>
+            <th><label asp-for="ConfirmPassword"></label></th>
+            <td><input asp-for="ConfirmPassword"/> <span asp-validation-for="ConfirmPassword"></span></td>
+        </tr>
+        <tr>
+            <th><label asp-for="TeamCode"></label></th>
+            <td><input asp-for="TeamCode"/> <span asp-validation-for="TeamCode"></span></td>
+            <th><label asp-for="TeamName"></label></th>
+            <td><input asp-for="TeamName"/> <span asp-validation-for="TeamName"></span></td>
+        </tr>
+        <tr>
+            <th><label asp-for="GroupCode"></label></th>
+            <td colspan="3">
+            <input asp-for="GroupCode"/> <span asp-validation-for="GroupCode"></span>
+            <span class="text text-info">팀코드보다 우선되는 그룹코드. 코드가있으면 이 코드로 묶이게 됩니다.</span>
+            </td>
+        </tr>
+        <tr>
+            <th width="120"><label asp-for="IsAdmin"></label></th>
+            <td><input asp-for="IsAdmin"/> <span asp-validation-for="IsAdmin"></span></td>
+        </tr>
+    </table>
+    
+    <legend style="border:1px solid #c8c8c8; display:inline-block; padding:8px; width:auto; border-bottom:0;"><span class="glyphicon glyphicon-pushpin"></span> 사용자정보</legend>
+    <table class="table table-bordered" style="width:950px;">
+        <tr>
+            <th width="100"><label asp-for="Name"></label></th>
+            <td><input asp-for="Name"/> <span asp-validation-for="Name"></span></td>
+            <th width="100"><label asp-for="EmployeeNo"></label></th>
+            <td><input asp-for="EmployeeNo"/> <span asp-validation-for="EmployeeNo"></span></td>
+        </tr>
+        <tr>
+            <th><label asp-for="Phone"></label></th>
+            <td><input asp-for="Phone"/> <span asp-validation-for="Phone"></span></td>
+            <th><label asp-for="Tel"></label></th>
+            <td><input asp-for="Tel"/> <span asp-validation-for="Tel"></span></td>
+        </tr>
+        <tr>
+            <th><label asp-for="Email"></label></th>
+            <td colspan="3"><input asp-for="Email"/> <span asp-validation-for="Email"></span></td>
+        </tr>
+        <tr>
+            <th><label asp-for="Remark"></label></th>
+            <td colspan="3">
+            <textarea asp-for="Remark"></textarea> <span asp-validation-for="Remark"></span>
+            </td>
+        </tr>
+    </table>
+    
+    <div style="width:950px; text-align:center; margin:10px;">
+        <button class="btn btn-primary submit">저장하기</button>
+        <button class="btn btn-info cancel">취소</button>
+    </div>
+</form>

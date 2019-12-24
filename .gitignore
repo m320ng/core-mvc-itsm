@@ -1,0 +1,11 @@
+# dependencies
+
+# testing
+
+# production
+/build
+/obj
+
+# misc
+/.vscode
+/Migrations

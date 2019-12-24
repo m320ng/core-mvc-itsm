@@ -1,0 +1,134 @@
+/* tables 
+----------------------------------------------------------------------*/
+
+/* list-table */
+	table.list-table {
+		table-layout:fixed;
+		border-collapse:collapse;
+		background:#fff;
+		border-top:1px solid #c8c8c8;
+		border-left:1px solid #c8c8c8;
+		border-bottom:1px solid #c8c8c8;
+	}
+	table.list-table caption {
+		background:transparent url(tables/table_caption.gif) no-repeat 0 50%;
+		padding:0 0 0 20px;
+		font:bold 11pt Arial;
+		height:20px;
+		text-align:left;
+	}
+	table.list-table th,
+	table.list-table td {
+		border-right:1px solid #ddd;
+		border-bottom:1px solid #ddd;
+		padding:3px;
+		text-align:left;
+		overflow:hidden;
+		font:9pt 돋움체;
+	}
+	table.list-table thead {
+		background:#f8f8f8 url(tables/list-table_header.gif) repeat-x left bottom;
+		border-right:1px solid #c8c8c8;
+	}
+	table.list-table th {
+		border-right:1px solid #c8c8c8;
+		font-weight:normal;
+		text-align:center;
+		height:25px;
+		margin:0;
+		padding:0;
+	}
+	table.list-table th a.asc {
+		padding:0 5px 0 0;
+		background:transparent url(tables/order_asc.gif) no-repeat right 2px;
+	}
+	table.list-table th a.desc {
+		padding:0 5px 0 0;
+		background:transparent url(tables/order_desc.gif) no-repeat right 2px;
+	}
+	table.list-table td {
+		text-align:center;
+		padding:3px;
+	}
+	table.list-table td.number {
+		font-family:tahoma;
+		font-size:8pt;
+		text-align:right;
+	}
+	table.list-table td.text {
+		font-family:돋움체;
+		text-align:left;
+	}
+	table.list-table td.data {
+		text-align:center;
+	}
+	table.list-table td.tel {
+		font-family:tahoma;
+		font-size:8pt;
+		text-align:left;
+	}
+	table.list-table td.email {
+		font-family:tahoma;
+		font-size:8pt;
+		text-align:left;
+	}
+	table.list-table td.date {
+		font-family:tahoma;
+		font-size:8pt;
+		text-align:center;
+	}
+	table.list-table td.manage {
+		text-align:left;
+		margin:0;
+		padding:4px;
+	}
+	table.list-table td.manage a {
+		display:block;
+		background:#69e;
+		color:#fff;
+		padding:2px;
+		text-align:center;
+	}
+	table.list-table td.manage a.disabled {
+		background:#aaa;
+	}
+	table.list-table td.no_data {
+		height:50px;
+	}
+/* end list-table */
+
+/* regist-table */
+	table.regist-table {
+		table-layout:fixed;
+		border-collapse:collapse;
+		border:3px solid #c8c8c8;
+	}
+	table.regist-table th,
+	table.regist-table td {
+		border-bottom:1px solid #c8c8c8;
+		border-right:1px solid #c8c8c8;
+	}
+	table.regist-table th {
+		background:#f8f8f8 url(tables/bullet.gif) no-repeat 0 50%;
+		font-weight:normal;
+		text-align:center;
+		padding-top:5px;
+		padding-left:17px;
+		text-align:left;
+	}
+	table.regist-table th.import {
+		background:#f8f8f8 url(tables/bullet_import.gif) no-repeat 0 50%;
+	}
+	table.regist-table caption {
+		background:transparent url(tables/table_caption.gif) no-repeat 0 50%;
+		padding:0 0 0 20px;
+		font:bold 11pt 돋움체;
+		height:20px;
+		text-align:left;
+	}
+	/* any IE hack */
+	table.regist-table caption {
+		padding-top:expression('6px');
+	}
+
+/* end regist-table */

@@ -1,0 +1,63 @@
+/* clearing */
+	.clearfix:after {
+		content:"."; 
+		display:block; 
+		height:0; 
+		font-size:0;
+		clear:both; 
+		visibility:hidden;
+	}
+	.clearfix {
+		min-height:1px;
+	}
+
+	* html>body .clearfix {
+		display:inline-block; 
+		width:100%;
+	}
+	
+	* html .clearfix {
+		/* Hides from IE-mac \*/
+		height:1%;
+		/* End hide from IE-mac */
+	}
+/* end clearing */
+
+/* listup */
+	ul.listup:after {
+		content:"."; 
+		display:block; 
+		height:0; 
+		font-size:0;
+		clear:both; 
+		visibility:hidden;
+	}
+	ul.listup {
+		min-height:1px;
+		list-style:none;
+	}
+	ul.listup li {
+		float:left;
+		margin:0 2px;
+		padding:0;
+		list-style:none;
+	}
+	* html>body ul.listup {
+		display:inline-block; 
+		width:100%;
+	}
+	* html ul.listup {
+		/* Hides from IE-mac \*/
+		height:1%;
+		/* End hide from IE-mac */
+	}
+	/* end clearfix */
+/* end listup */
+
+	.ellipsis {
+		white-space:nowrap;
+		text-overflow:ellipsis;		/* IE, Safari */
+		-o-text-overflow:ellipsis;	/* Opera under 10.7 */
+		overflow:hidden;			/* "overflow" value must be different from "visible" */ 
+		-moz-binding: url('ellipsis.xml#ellipsis');
+	}
