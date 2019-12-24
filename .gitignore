@@ -3,8 +3,7 @@
 # testing
 
 # production
-/build
-/obj
+/obj/*
 
 # misc
 /.vscode
