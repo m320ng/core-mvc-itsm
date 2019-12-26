@@ -140,10 +140,9 @@ namespace IssueTracker.Services {
             }
         }
 
-        public ICollection<IssueEmployee> Pagination(int limit = 100, int page = 1) {
+        public IQueryable<IssueEmployee> All() {
             var query = _context.IssueEmployee.AsNoTracking();
-            query = query.Take(limit);
-            return query.ToList();
+            return query;
         }
 
         public IList<IssueEmployee> GetAll() {
